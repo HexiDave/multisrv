@@ -7,8 +7,8 @@
     <ProjectGuid>{447F15CC-341E-4744-B1A7-A72D80FF1589}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CitizenMP.Server</RootNamespace>
-    <AssemblyName>CitizenMP.Server</AssemblyName>
+    <RootNamespace>multifive</RootNamespace>
+    <AssemblyName>multifive-server</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

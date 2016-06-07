@@ -87,7 +87,7 @@ namespace CitizenMP.Server.Logging
         private static void UIThread()
         {
             var window = new Form();
-            window.Text = "CitizenFX Platform Server";
+            window.Text = "Multifive Decided Server";
             window.Size = new Size(800 + 16, 600 + 39);
 
             window.FormClosed += window_FormClosed;

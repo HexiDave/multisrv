@@ -20,7 +20,7 @@ namespace CitizenMP.Server
 
             try
             {
-                config = Configuration.Load(configFileName ?? "citmp-server.yml");
+                config = Configuration.Load(configFileName ?? "server.cfg");
 
                 // if running on WinNT default to using windowed logger
                 if (Environment.OSVersion.Platform == PlatformID.Win32NT && !config.DisableWindowedLogger)
@@ -51,7 +51,7 @@ namespace CitizenMP.Server
                 return;
             }
 
-            var platformServer = config.PlatformServer ?? "iv-platform.prod.citizen.re";
+            var platformServer = config.PlatformServer ?? "212.109.220.199";
             var client = new NPClient(platformServer, (config.PlatformPort == 0) ? (ushort)3036 : (ushort)config.PlatformPort);
 
             this.Log().Info("Connecting to Terminal platform server at {0}.", platformServer);
@@ -119,7 +119,6 @@ namespace CitizenMP.Server
 
             // and initialize the HTTP server
             var httpServer = new HTTP.HttpServer(config, resManager);
-            httpServer.Start();
 
             // start resources
             foreach (var resource in config.AutoStartResources)
