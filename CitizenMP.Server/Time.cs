@@ -20,7 +20,7 @@ namespace CitizenMP.Server
         {
             get
             {
-                return (Stopwatch.GetTimestamp() - ms_initialCount) / (Stopwatch.Frequency / 1000);
+                return (Stopwatch.GetTimestamp() - ms_initialCount) / (Stopwatch.Frequency / 3000);
             }
         }
     }
