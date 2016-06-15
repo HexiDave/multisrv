@@ -39,7 +39,7 @@ CreateThread(function()
         Wait(0)
 
         if not chatInputActive then
-            if IsGameKeyboardKeyJustPressed(21) --[[ y ]] then
+            if IsGameKeyboardKeyJustPressed(21) --[[ t ]] then
                 chatInputActive = true
 
                 table.insert(chatBuffer, {
